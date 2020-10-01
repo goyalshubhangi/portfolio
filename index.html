@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Describes who Shubhangi Goyal actually is.">
+	<meta name="keywords" content="HTML,CSS, JavaScript">
+	<meta name="author" content="Shubhangi Goyal">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Shubhangi Goyal</title>
+	<link rel="icon" href="img/favicon.png">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" >
+	<link rel="stylesheet" href="css/Myfolio.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Sacramento|Pompiere|Raleway|Open+Sans|Roboto|Redressed|Federo' rel='stylesheet'>
+	<script src="java_script/java1.js"></script>
+	<script src="java_script/java2.js"></script>
+	<script src="java_script/java3.js"></script>
+</head>
+
+<body class="one_page" style="position: relative;">
+<!--#########################sidebar#####################-->
+<div class="full_bar">
+	<div class="sidenav" id="mysidenav">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<a href='#home' class="active" onclick="closeNav()">Home</a>
+		<a href="#about" onclick="closeNav()">About</a>
+		<a href="#work" onclick="closeNav()">Works</a>
+		<a href="#contact" onclick="closeNav()">Contact</a>
+	</div>
+	<div class="bar" >
+		<span style="font-size: 40px; cursor: pointer; margin-left: 10px; padding:10px;" onclick="openNav()">&#9776;</span>
+		<img src="img/logo.png" style="float: right;margin-top: 10px; margin-right: 20px; width:30px;">
+	</div>
+</div>
+
+<!--Page Content-->
+<div id="home">
+	<div class="home-wrap text-center">
+		<h1 class="home-header" style=" font-family: 'Redressed', cursive;"><span>I'</span>m <span>S</span>hubhangi <span> G</span>oyal.</h1>
+		<h2>Web Developer | Content Writer| Programmer | Designer<span class="blinking-cursor" style="font-size: 3vw;">|</span></h2>
+		<hr class="home-line">
+		<div class="home-buttons">
+			<div class="center_align" style="text-align: center;">
+				<a href="https://github.com/goyalshubhangi" target="_blank" class="btn btn-default"><i class="fab fa-github"></i></a>
+				<a href="https://codepen.io/Shubhii/" target="_blank" class="btn btn-default"><i class="fab fa-codepen"></i></a>
+				<a href="https://www.linkedin.com/in/shubhangi-goyal-95024114a"  target="_blank" class="btn btn-default"><i class="fab fa-linkedin"></i></a>
+			</div>
+		</div>
+	</div>
+	<div class="my">
+	 <a href="#about" class="btn btn-circle">
+          <i class="fa fa-angle-double-down"></i>
+        </a>
+    </div>
+</div>
+
+<!---About Section-->
+<div class="content" id="about">
+	<div class="about_header">
+		<h2 class="text" style="color:white;text-align:center;font-size:40px;">Shubhangi Goyal</h2> 
+		<hr class="line">
+	</div>
+	<div class="about_content">
+		<span id="img_holder">
+			<img src="img/about.jpg" alt="Shubhangi">
+		</span>
+		<span id="text_holder">
+			<div class="about_text">
+				<p>My name is <strong>Shubhangi Goyal</strong>. I am a self-taught web developer. I love to write content for a website. I have a passion for developing websites & web applications.</p>
+				<p>I possess good communication skills. I love to do new things. Want me to work for you?? Do contact me....</p>
+
+				<div class="list" style="font-family: 'Raleway',sans-serif">
+					<p style="text-align:center;font-size:125%"><strong><u>Competences</u></strong></p>
+					<p>Languages- C++, JAVA, HTML5, CSS3, JavaScript, PHP</p>
+					<p>Databases- MYSQL</p>
+					<p>Designing- Photoshop, Inkscape, Corel Draw</p>
+					<p>Android Programming</p>
+				</div>
+			</div>
+		</span>
+	</div>
+</div>
+
+<!--****************MY work******************-->
+<div class="skills" id="work" >
+	<div class="work_header">
+		<h2>My Work</h2>
+		<hr class="work_line">
+		<div class="box-card">
+			<div class="swiper-container gallery-top">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<div class="box-image" style="background-image:url('img/Ikkhwaab.png');"></div>
+					</div>
+					<div class="swiper-slide">
+						<div class="box-image" style="background-image:url('img/Sociovation.png');"></div>
+					</div>
+					<div class="swiper-slide">
+						<div class="box-image" style="background-image:url('img/Mypholio.png');"></div>
+					</div>
+				</div>
+			</div>
+			<div class="swiper-container gallery-thumbs">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<h1>Ikkhwaab</h1><br>
+					</div>
+					<div class="swiper-slide">
+						<h1>Sociovation</h1><br>
+					</div>
+					<div class="swiper-slide">
+						<h1>My<br>Portfolio</h1><br>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--*********************CONTACT*********-->
+<div class="contact-me" id="contact"  >
+	<h2 style="text-align: center; ">Contact</h2>
+	<hr class="contact_line">
+	<div class="contact-container">
+		<form action="message.php" target="_blank" method="post" onsubmit="alert('Thank you for your feedback!')">
+			<div class="row_1">
+				<input type="name" id="fname" name="firstname" placeholder="Name" required="">
+			</div>
+			<div class="row_1">
+				<input type="email" id="email" name="Email" placeholder="E-mail address" style="margin-top: 40px;" required="">
+			</div>
+			<div class="row_1">
+				<textarea id="message" name="message" placeholder="Write Something.." style="height:200px; margin-top: 40px;" required=""></textarea>
+			</div>
+			
+			<button type="submit" style="background-color: #57BA98; color: white; height:50px; margin-top: 50px;">Submit</button>
+		</form>
+	</div>
+</div>
+
+<!--*************footer************************-->
+<footer class="details" style="background-color: #45A29E; height: 30px; padding: 4px;">
+	<p id="copyRight"><strong>©</strong>All Rights Reserved to <strong>Shubhangi Goyal</strong></p>
+</footer>
+<script src="java_script/folio.js"></script>
+</body>
+</html>
